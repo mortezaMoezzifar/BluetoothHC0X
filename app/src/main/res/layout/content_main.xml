@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity"
+    android:transitionGroup="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+
+
+    <!--   <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/imageView"
+           android:src="@drawable/abc"
+           android:layout_below="@+id/textView"
+           android:layout_centerHorizontal="true"
+           android:theme="@style/Base.TextAppearance.AppCompat" />-->
+
+    <!--        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_toLeftOf="@+id/imageView"-->
+
+
+
+
+    TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="227dp"
+        android:timePickerMode="spinner"
+        android:layout_centerHorizontal="true"
+        android:numbersTextColor="@color/numcolor"/> <!-- 20dp padding from all the sides of a time picker -->
+
+
+    Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setTime"
+        android:id="@+id/btnSetTime"
+        android:onClick="btnSetTime"
+        android:nestedScrollingEnabled="false"
+        android:background="@color/btntimeset" />
+
+    Button
+        android:background = "@drawable/roundedbutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/btnscan"
+        android:id="@+id/btnSearch"
+        android:layout_gravity="center_horizontal"
+        android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp"
+        android:layout_margin="30dp"
+        android:onClick="btnSearch"/>
+
+
+    <!--   <ListView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/listView"
+           android:layout_alignParentBottom="true"
+           android:layout_alignLeft="@+id/button"
+           android:layout_alignStart="@+id/button"
+           android:layout_below="@+id/textView2" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/txt_disconnect"
+        android:id="@+id/txtStatus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txt_send"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTxtSubmit" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:text="@string/btn_submit"
+            android:id="@+id/btnSubmit"
+            android:onClick="btnSubmit"
+            android:padding="20dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chkbox_rn"
+                android:id="@+id/chkbox_rn"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chkbox_r"
+                android:id="@+id/chkbox_r"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chkbox_n"
+                android:id="@+id/chkbox_n"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chkbox_no"
+                android:id="@+id/chkbox_no"
+                android:checked="true"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txt_receive"
+        android:id="@+id/textView3"
+        android:layout_marginTop="80dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTxtReceive"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_erase"
+            android:id="@+id/btnErase"
+            android:layout_margin="10dp"
+            android:onClick="btnErase"/>
+    </LinearLayout>
+
+</LinearLayout>

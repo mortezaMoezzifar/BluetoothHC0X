@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BluetoothHC0X</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_connected">Connected</string>
+    <string name="txt_disconnect">Disconnect</string>
+    <string name="txt_connecting">Connecting</string>
+    <string name="txt_send">Send:</string>
+    <string name="txt_receive">Receive:</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_erase">Erase</string>
+    <string name="btn_endline">End line</string>
+    <string name="chkbox_rn">"CR LF"</string>
+    <string name="chkbox_r">"CR"</string>
+    <string name="chkbox_n">"LF"</string>
+    <string name="chkbox_no">"null"</string>
+</resources>
