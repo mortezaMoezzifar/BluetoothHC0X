@@ -13,67 +13,6 @@
 
 
 
-
-
-    <!--   <ImageView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:id="@+id/imageView"
-           android:src="@drawable/abc"
-           android:layout_below="@+id/textView"
-           android:layout_centerHorizontal="true"
-           android:theme="@style/Base.TextAppearance.AppCompat" />-->
-
-    <!--        android:layout_below="@+id/imageView"
-        android:layout_toStartOf="@+id/imageView"
-        android:layout_toLeftOf="@+id/imageView"-->
-
-
-
-
-    TimePicker
-        android:id="@+id/TimePicker"
-        android:layout_width="fill_parent"
-        android:layout_height="227dp"
-        android:timePickerMode="spinner"
-        android:layout_centerHorizontal="true"
-        android:numbersTextColor="@color/numcolor"/> <!-- 20dp padding from all the sides of a time picker -->
-
-
-    Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/setTime"
-        android:id="@+id/btnSetTime"
-        android:onClick="btnSetTime"
-        android:nestedScrollingEnabled="false"
-        android:background="@color/btntimeset" />
-
-    Button
-        android:background = "@drawable/roundedbutton"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/btnscan"
-        android:id="@+id/btnSearch"
-        android:layout_gravity="center_horizontal"
-        android:left="5dp"
-        android:top="5dp"
-        android:right="5dp"
-        android:bottom="5dp"
-        android:layout_margin="30dp"
-        android:onClick="btnSearch"/>
-
-
-    <!--   <ListView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:id="@+id/listView"
-           android:layout_alignParentBottom="true"
-           android:layout_alignLeft="@+id/button"
-           android:layout_alignStart="@+id/button"
-           android:layout_below="@+id/textView2" />-->
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
